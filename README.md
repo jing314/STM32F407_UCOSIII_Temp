@@ -1,1 +1,7 @@
 # STM32F407_UCOSIII_Temp
+这个文件以野火UCOS模板为基础，api代码为板载配置文件
+文件现在后可在其中创建一个Libraries文件将CMSIS与STM32F4xxxxxx文件夹放入其中，创建一个Output文件夹用来存放keil的编译输出文件
+app.c为任务创建区，所有任务均在其中创建
+bsp.c为板载外设配置区，其中的bsp_Init函数内可用放入裸机配置文件
+
+关于keil中的头文件路径等等相关路径都以配置完毕，可以直接打开Project文件夹中的 .uvprojx进行修改
